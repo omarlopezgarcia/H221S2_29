@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="resources/css/styles.css">
 </head>
 
 <body>
@@ -267,36 +268,27 @@
           </div>
     </section>
     <h1 id="lamatricula" class="color-acento">MATRÍCULA</h1><center>
-    <section id="contactanos" class="section contactme">
-        <div class="container">
-           <div class="contactme-contacts">
-           <form class="contactme-form" id="formulario-contactanos">
-              <div class="contactme-field -name">
-                 <label for="nombre" class="label" id="textmatricula">Nombre: *</label>
-                 <input id="nombre" type="text" class="input" placeholder="Alex Doe">
-              </div><br>
-              <div class="contactme-field -mail">
-                 <label for="correo" class="label" id="textmatricula">Gmail: *</label>
-                 <input id="correo" type="email" class="input" placeholder="alex.doe@gmail.com">
-              </div><br>
-              <div class="contactme-field -project">
-                 <label for="asunto" class="label" id="textmatricula">Asunto: *</label>
-                 <input id="asunto" type="text" class="input" placeholder="Matricula">
-              </div><br>
-              <div class="contactme-field -message">
-                 <label for="descripcion" class="label" id="textmatricula">Descripcion: *</label>
-                 <textarea id="descripcion" class="input" cols="0" rows="7" placeholder="Detallar el asunto..."></textarea>
-              </div><br>
-              <button type="submit" id="btn-submit" class="calltoaction -submit">
-                 Enviar datos
-                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <title>Enviar datos</title>
-                    <path
-                       d="M14.67 5.853 3.472.251A2.4 2.4 0 0 0 .207 3.372l1.92 4.298a.849.849 0 0 1 0 .656l-1.92 4.297A2.402 2.402 0 0 0 2.4 16a2.51 2.51 0 0 0 1.08-.256l11.2-5.602a2.4 2.4 0 0 0 0-4.289h-.008zM13.96 8.71l-11.2 5.601a.8.8 0 0 1-1.08-1.04l1.912-4.297c.025-.057.046-.116.064-.176h5.512a.8.8 0 0 0 0-1.6H3.655a1.6 1.6 0 0 0-.064-.177L1.68 2.724a.8.8 0 0 1 1.08-1.04l11.2 5.601a.8.8 0 0 1 0 1.425z" />
-                 </svg>
-              </button>
-           </form>
+        <div id="overview">
+            <section class="order" id="order">
+                <div id="form" class="row">
+                    <form class="form">
+                        <div class="inputBox">
+                            <input id="NOMMAT" placeholder="Nombre" type="text" class="form-control" />
+                            <input id="EMAMAT" placeholder="Correo" type="text" class="form-control" />
+                        </div>
+                        <div class="inputBox">
+                            <input id="ASUMAT" placeholder="Pedido" type="text" class="form-control" />
+                        </div>
+                        <textarea id="DESCMAT" placeholder="Mensaje" cols="30" rows="10" class="form-control"></textarea>
+                        <button id="btnCrear" type="submit" class="btn btn-secondary">
+                            Ordenar ahora
+                        </button>
+                    </form>
+                </div>
+            </section>
         </div>
+        <script src="resources/js/bootstrap.bundle.min.js"></script>
+        <script src="resources/registro.js"></script>
         <p class="terminos">Al dar click en el siguiente botón usted acepta los terminos y condiciones del Instituto Educativo.</p>
                 <button id="openterm" class="botonterminos">Acepto</button>
                 <div id="modalterm_container" class="modalterm-container">
