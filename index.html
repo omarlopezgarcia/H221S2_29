@@ -266,25 +266,25 @@
             </div>
           </div>
     </section>
-    <h1 class="color-acento">MATRÍCULA</h1><center>
+    <h1 id="lamatricula" class="color-acento">MATRÍCULA</h1><center>
     <section id="contactanos" class="section contactme">
         <div class="container">
            <div class="contactme-contacts">
            <form class="contactme-form" id="formulario-contactanos">
               <div class="contactme-field -name">
-                 <label for="nombre" class="label">Nombre</label>
+                 <label for="nombre" class="label" id="textmatricula">Nombre: *</label>
                  <input id="nombre" type="text" class="input" placeholder="Alex Doe">
               </div><br>
               <div class="contactme-field -mail">
-                 <label for="correo" class="label">Gmail</label>
+                 <label for="correo" class="label" id="textmatricula">Gmail: *</label>
                  <input id="correo" type="email" class="input" placeholder="alex.doe@gmail.com">
               </div><br>
               <div class="contactme-field -project">
-                 <label for="asunto" class="label">Asunto</label>
+                 <label for="asunto" class="label" id="textmatricula">Asunto: *</label>
                  <input id="asunto" type="text" class="input" placeholder="Matricula">
               </div><br>
               <div class="contactme-field -message">
-                 <label for="descripcion" class="label">Descripcion</label>
+                 <label for="descripcion" class="label" id="textmatricula">Descripcion: *</label>
                  <textarea id="descripcion" class="input" cols="0" rows="7" placeholder="Detallar el asunto..."></textarea>
               </div><br>
               <button type="submit" id="btn-submit" class="calltoaction -submit">
@@ -297,9 +297,18 @@
               </button>
            </form>
         </div>
+        <p class="terminos">Al dar click en el siguiente botón usted acepta los terminos y condiciones del Instituto Educativo.</p>
+                <button id="openterm" class="botonterminos">Acepto</button>
+                <div id="modalterm_container" class="modalterm-container">
+                    <div class="modalterm">
+                      <h1>Términos y Condiciones</h1>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Eius harum molestiae iste, nihil doloribus fugiat distinctio
+                        ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+                      <a id="closeterm" class="terminarboton">Cerrar</a>
+                    </div>
+                  </div>
      </section></center>
-  
-    
     <footer id="footer">
         <div class="main-content">
             <div class="left box">
