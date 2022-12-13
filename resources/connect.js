@@ -33,6 +33,7 @@ app.post("/api/MATRICULA", (req, res) => {
 	let data = {
     	NOMMAT: req.body.NOMMAT,
     	EMAMAT: req.body.EMAMAT,
+		CELMAT: req.body.CELMAT,
     	ASUMAT: req.body.ASUMAT,
     	DESCMAT: req.body.DESCMAT,
 	};

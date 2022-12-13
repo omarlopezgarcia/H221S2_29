@@ -1,5 +1,5 @@
-:root{
-  --red:#ff3838;
+.row{
+  width: 90%;
 }
 
 .order .row{
@@ -10,10 +10,6 @@
   flex-wrap: wrap;
   gap:1.5rem;
   border-radius: .5rem;
-}
-
-.order .row .image{
-  flex:1 1 30rem;
 }
 
 .order .row form{
@@ -28,14 +24,12 @@
 }
 
 .order .row form .inputBox input, .order .row form textarea{
-  padding:1rem;
-  margin:1rem 0;
-  font-size: 1.7rem;
+  padding: 10px;
   color:#333;
   text-transform: none;
   border:.1rem solid rgba(0,0,0,.3);
   border-radius: .5rem;
-  width:49%;
+  width:100%;
 }
 
 .order .row form textarea{
@@ -44,11 +38,13 @@
   height:15rem;
 }
 
-.order .row form .btn{
-  background:none;
+#btnCrear{
+  background: rgb(255, 80, 80);
+  margin: 10px;
+  font-size: 15px;
 }
 
-.order .row form .btn:hover{
-  background:var(--red);
+#btnCrear:hover{
+  background: rgb(211, 89, 89);
 }
 

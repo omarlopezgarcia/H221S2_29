@@ -3,6 +3,7 @@ let resultados = '';
 const formArticulo = document.querySelector("form");
 const NOMMAT = document.getElementById("NOMMAT");
 const EMAMAT = document.getElementById("EMAMAT");
+const CELMAT = document.getElementById("CELMAT");
 const ASUMAT = document.getElementById("ASUMAT");
 const DESCMAT = document.getElementById("DESCMAT");
 var opcion = '';
@@ -16,7 +17,7 @@ formArticulo.addEventListener('submit',
     (e) => {
    	 e.preventDefault();
    	 if (opcion == 'crear') {
-   		 if (NOMMAT.value == "" || EMAMAT.value == "" || ASUMAT.value == "" || DESCMAT.value == "") {
+   		 if (NOMMAT.value == "" || EMAMAT.value == "" || CELMAT.value == "" || ASUMAT.value == "" || DESCMAT.value == "") {
        		 alert("Asegúrese de que todos los campos estén completos");
        		 return false;
    		 } else {
@@ -32,6 +33,7 @@ formArticulo.addEventListener('submit',
                    		 {
                        		 NOMMAT: NOMMAT.value,
                        		 EMAMAT: EMAMAT.value,
+							 CELMAT: CELMAT.value,
                        		 ASUMAT: ASUMAT.value,
                        		 DESCMAT: DESCMAT.value,
                    		 }
