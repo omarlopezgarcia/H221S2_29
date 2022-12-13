@@ -1,0 +1,776 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(207, 90, 90);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cfa92d;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.color-acento {
+    color: #cfa92d;
+    font-family: 'Roboto', Cambria;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    font-size: 52px;
+    padding-top: 80px;
+}
+
+
+/*HEADER (MENÚ) - ENCABEZADO*/
+header {
+    background: url(fondo-nav.png) no-repeat;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+header img{
+    height: 100%;
+    width: 330px;
+    padding-left: 70px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+header a {
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #CF2D2D;
+    border-bottom: 2px solid black;
+}
+
+header a:hover {
+    color: rgb(255, 255, 255);
+}
+
+nav a{
+    padding: 10px 35px;
+    font-size: 15px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+a:hover{
+    background: rgb(230, 86, 86);
+}
+.matriculate{
+    border: 3px blue solid;
+    color: blue;
+}
+.matriculate:hover{
+    background: rgb(64, 97, 245);
+}
+
+/*SLIDER PRINCIPAL*/
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    margin-bottom: 50px;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left:0;}
+    20% {margin-left:0;}
+    
+    25% {margin-left:-100%;}
+    45% {margin-left:-100%;}
+    
+    50% {margin-left:-200%;}
+    70% {margin-left:-200%;}
+
+    75% {margin-left:-300%;}
+    100% {margin-left:-300%;}
+}
+
+/*¿QUIÉNES SOMOS?*/
+#nuestra-historia .container {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+
+#nuestra-historia .container p {
+ background-color: #ffffff;
+ width: 100%;
+ height: 100%;
+ font-family: cambria;
+}
+
+/*MISIÓN - VISIÓN - VALOR*/
+.container1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    background-color: #ffffff;
+    padding-bottom: 40px;
+}
+
+.container1 .card{
+    width: 330px;
+    height: 510px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 40px;
+    text-align: center;
+    box-shadow: -5px 12px 10px rgb(161, 40, 40);
+    background-color: #e6dfda;
+    font-family: inria serif;
+    transition: all 1s ease;
+}
+
+.container1 .card img{
+    padding-top: 15px;
+    width: 90px;
+    height: 110px;
+}
+
+.container1 .card p{
+    padding: 0 1rem;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.container1 .card a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.container1 .card:hover{
+    transform: translateY(-3%);
+}
+
+/*RESEÑA HISTÓRICA Y PALABRA DEL DIRECTOR*/
+.historia{
+    background-color: #5c9ccc;
+    color: rgb(255, 253, 253);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.container2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+.container2 .reseña-historica{
+    width: 600px;
+    height: 800px;
+    border-radius: 8px;
+    box-shadow: -5px 10px 10px #375c8d;
+    overflow: hidden;
+    margin: 40px;
+    background-color: #6d8fbd;
+    justify-content: center;
+    transition: all 1s ease;
+}
+.container2 .reseña-historica img{
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.container2 .reseña-historica h1{
+    font-size: 25px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
+    font-family: Cambria;
+}
+.container2 .reseña-historica p{
+    margin: 10px;
+    font-size: 18px;
+}
+
+.container2 .reseña-historica:hover{
+    transform: translateY(-2%);
+}
+
+.container2 .palabra-director{
+    width: 300px;
+    height: 800px;
+    border-radius: 8px;
+    box-shadow: -5px 10px 10px #375c8d;
+    overflow: hidden;
+    margin: 40px;
+    background-color: #6d8fbd;
+    justify-content: center;
+    transition: all 1s ease;
+}
+
+.container2 .palabra-director img{
+    width: 250px;
+    height: 300px;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+
+.container2 .palabra-director h1{
+    font-size: 25px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
+    font-family: Cambria;
+}
+
+.container2 .palabra-director h2{
+    font-size: 20px;
+    font-family: Cambria;
+}
+
+.container2 .palabra-director p{
+    margin: 22px;
+    font-size: 18px;
+}
+.container2 .palabra-director:hover{
+    transform: translateY(-2%);
+}
+
+/*DOCENTES*/
+.sliderdocentes{
+    max-width: 1100px;
+  }
+  .sliderdocentes .docentecard{
+    margin: 10px 10px;
+    background: #fff;
+    box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;    
+}
+  .sliderdocentes .docentecard .img{
+    height: 240px;
+    width: 100%;
+  }
+  .sliderdocentes .docentecard .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .sliderdocentes .docentecard .content{
+    padding: 10px 3px;
+  }
+  .docentecard .content .titulo{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .docentecard .content .subtitulo{
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff1900;
+    line-height: 20px;
+  }
+  .docentecard .content p{
+    text-align: justify;
+    margin: 10px 30px;
+  }
+
+/*GRADOS*/
+.gradoscard {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 50px;
+    margin-bottom: 70px;
+}
+
+.gradoscard .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.gradoscard .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 7px 7px 5px rgb(92, 92, 92);
+}
+
+.gradoscard .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradoscard .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 25px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.gradoscard .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(201, 117, 117);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.gradoscard .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.gradoscard .back p {
+    letter-spacing: 1px;
+} 
+
+.gradoscard:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.gradoscard:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+/*ACTIVIDADES*/
+#Actividades {
+    background-color: #ff2f2f;
+    color: rgb(255, 253, 253);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@keyframes slider {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 6))}
+}
+
+
+.slideractividades {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100%;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+    
+}
+.slideractividades::before,.slideractividades::after {
+		position: absolute;
+		z-index: 2;
+}
+	
+.slide-track {
+		animation: slider 30s linear infinite;
+		display: flex;
+}
+	
+.slide {
+		height: 200px;
+		width: 500px;
+}
+/*DOCUMENTOS*/
+.container3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    background-color: #ffffff;
+    padding-bottom: 40px;
+}
+
+.container3 .carddoc{
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 50px;
+    text-align: center;
+    box-shadow: 10px 10px 0px #366C70;
+    background-color: #58B181;
+    font-family: inria serif;
+    transition: all 1s ease;
+    margin-bottom: -20px;
+}
+.container3 .carddoc h1{
+    font-size: 20px;
+    color: white;
+}
+.container3 .carddoc img{
+    padding-top: 15px;
+    margin-bottom: 25px;
+    width: 150px;
+    height: 150px;
+}
+
+.container3 .carddoc p{
+    padding: 0 1rem;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.container3 .carddoc a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container3 .carddoc:hover{
+    transform: translateY(-3%);
+}
+
+.botondoc {
+    display: block;
+    background-color: #366C70;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 2px 0px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.botondoc:hover {
+    background-color: #5bc1c9;
+}
+
+#close{
+    background-color: #366C70;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#close:hover{
+    background-color: #5bc1c9;
+    text-decoration: none;
+}
+
+.modal-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+  
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+  
+.modal {
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+  
+.modal h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+/*RELLENADO DE MATRÍCULA*/
+
+.row{
+    font-size: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.textmatricula{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+/*TERMINOS Y CONDICIONES*/
+.terminos {
+    display: block;
+    color: rgb(0, 90, 0);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px 4px;
+    font-size: 20px;
+    appearance:none;
+}
+
+.botonterminos {
+	border-radius: 4px;
+	font-size: 15px;
+	padding: 0.75rem 1rem;
+	background-color: rgb(37, 144, 252);
+	color: white;
+    align-items: center;
+    cursor:auto;
+}
+
+.botonterminos:hover{
+    background-color: rgb(95, 153, 211);
+}
+.botondocterm:hover {
+    background-color: #5bc1c9;
+}
+
+#closeterm{
+    background-color: #366C70;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#closeterm:hover{
+    background-color: #5bc1c9;
+    text-decoration: none;
+}
+
+.modalterm-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+  
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+  
+.modalterm {
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+  
+.modalterm h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+/*RESPONSIVE*/
+@media (min-width: 720px) {
+    header {
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+        position: fixed;
+        z-index: 2;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #nuestra-historia .texto {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*PIÉ DE PÁGINA*/
+
+footer{
+    bottom: 0px;
+    width: 100%;
+    background: #FE5050;
+    justify-content: center;
+  }
+footer p {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    padding: 4px;
+}
+
+.main-content .box{
+    flex-basis: 100%;
+    padding: 10px 20px;
+ }
+
+.main-content .content img{
+    width: 50px;
+    position: absolute;
+}
+
+.main-content .content p{
+    padding-left: 55px;
+    padding-bottom: 10px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.box h2{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px 2px rgb(0, 0, 0);
+}
+
+.redes{
+    text-align: center;
+}
+
+.left .content .social{
+    margin: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+#map{
+    padding-top: 20px;
+}
+@media(min-width: 1200px) {
+    .main-content{
+        display: flex;
+      }
+}
+
+.social-botones{
+    background-color: #af0e1b;
+    border-radius: 10px;
+    padding: 5px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    display: block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social-botones:hover{
+    background-color: #f83b3b;
+    text-decoration: none;
+}
