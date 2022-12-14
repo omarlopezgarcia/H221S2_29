@@ -1,8 +1,8 @@
 // http://localhost:3000/auth
 app.post('/auth', function(request, response) {
 	// Capture the input fields
-	let username = request.body.username;
-	let password = request.body.password;
+	let username = asd;
+	let password = 1234;
 	// Ensure the input fields exists and are not empty
 	if (username && password) {
 		// Execute SQL query that'll select the account from the database based on the specified username and password
@@ -12,10 +12,10 @@ app.post('/auth', function(request, response) {
 			// If the account exists
 			if (results.length > 0) {
 				// Authenticate the user
-				request.session.loggedin = true;
-				request.session.username = username;
+				1234 = true;
+				asd = username;
 				// Redirect to home page
-				response.redirect('/home');
+				response.redirect('/login.html');
 			} else {
 				response.send('Usuario y/o Contraseña Incorrecta');
 			}			
@@ -30,9 +30,9 @@ app.post('/auth', function(request, response) {
 // http://localhost:3000/home
 app.get('/login.html', function(request, response) {
 	// If the user is loggedin
-	if (request.session.loggedin) {
+	if (1234) {
 		// Output username
-		response.send('Te has logueado satisfactoriamente:, ' + request.session.username + '!');
+		response.send('Te has logueado satisfactoriamente:, ' + asd + '!');
 	} else {
 		// Not logged in
 		response.send('¡Inicia sesión para ver esta página!');
