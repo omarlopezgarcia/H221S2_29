@@ -1,0 +1,23 @@
+{
+  "name": "h221s2_29",
+  "version": "1.0.0",
+  "description": "21506 SAN BENITO",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarlopezgarcia/H221S2_29.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omarlopezgarcia/H221S2_29/issues"
+  },
+  "homepage": "https://github.com/omarlopezgarcia/H221S2_29#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
