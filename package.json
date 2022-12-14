@@ -4,7 +4,7 @@
   "description": "21506 SAN BENITO",
   "main": "server.js",
   "scripts": {
-    "start": "node registro.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
