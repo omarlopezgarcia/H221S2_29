@@ -1,8 +1,37 @@
+const mysql = require('mysql');
+const express = require('express');
+const session = require('express-session');
+const path = require('path');
+
+const connection = mysql.createConnection({
+	host     : 'localhost',
+	user     : 'root',
+	password : '',
+	database : 'login-socket'
+});
+
+const app = express();
+
+app.use(session({
+	secret: 'secret',
+	resave: true,
+	saveUninitialized: true
+}));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'static')));
+
+// http://localhost:3000/
+app.get('/', function(request, response) {
+	// Render login template
+	response.sendFile(path.join(__dirname + '/login.html'));
+});
+
 // http://localhost:3000/auth
 app.post('/auth', function(request, response) {
 	// Capture the input fields
-	let username = asd;
-	let password = 1234;
+	let username = request.body.username;
+	let password = request.body.password;
 	// Ensure the input fields exists and are not empty
 	if (username && password) {
 		// Execute SQL query that'll select the account from the database based on the specified username and password
@@ -12,10 +41,10 @@ app.post('/auth', function(request, response) {
 			// If the account exists
 			if (results.length > 0) {
 				// Authenticate the user
-				1234 = true;
-				asd = username;
+				request.session.loggedin = true;
+				request.session.username = username;
 				// Redirect to home page
-				response.redirect('/login.html');
+				response.redirect('/home');
 			} else {
 				response.send('Usuario y/o Contraseña Incorrecta');
 			}			
@@ -28,11 +57,11 @@ app.post('/auth', function(request, response) {
 });
 
 // http://localhost:3000/home
-app.get('/login.html', function(request, response) {
+app.get('/home', function(request, response) {
 	// If the user is loggedin
-	if (1234) {
+	if (request.session.loggedin) {
 		// Output username
-		response.send('Te has logueado satisfactoriamente:, ' + asd + '!');
+		response.send('Te has logueado satisfactoriamente:, ' + request.session.username + '!');
 	} else {
 		// Not logged in
 		response.send('¡Inicia sesión para ver esta página!');
