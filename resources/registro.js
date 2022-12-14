@@ -1,4 +1,4 @@
-const url = "http://50.16.137.250:3000//api/MATRICULA/";
+const url = "http://50.16.137.250:3000/api/MATRICULA/";
 let resultados = '';
 const formArticulo = document.querySelector("form");
 const NOMMAT = document.getElementById("NOMMAT");
