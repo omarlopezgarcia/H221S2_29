@@ -1,4 +1,4 @@
-const url = "http://54.196.183.22:3000/api/MATRICULA/";
+const url = "http://localhost:3000/api/MATRICULA/";
 let resultados = '';
 const formArticulo = document.querySelector("form");
 const NOMMAT = document.getElementById("NOMMAT");

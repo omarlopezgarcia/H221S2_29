@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
 	host     : 'localhost',
 	user     : 'root',
 	password : '',
-	database : 'login-socket'
+	database : 'landing_page'
 });
 
 const app = express();
@@ -57,7 +57,7 @@ app.post('/auth', function(request, response) {
 });
 
 // http://localhost:3000/home
-app.get('/home', function(request, response) {
+app.get('/login.html', function(request, response) {
 	// If the user is loggedin
 	if (request.session.loggedin) {
 		// Output username
