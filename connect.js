@@ -10,7 +10,7 @@ app.use(cors());
 var conexion = mysql.createConnection({
   host: "localhost",
   user: "root",
-  database: "landing_page",
+  database: "landing_page1",
 });
 
 conexion.connect(function (error) {
