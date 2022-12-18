@@ -10,7 +10,7 @@ app.use(cors());
 var conexion = mysql.createConnection({
   host: "localhost",
   user: "root",
-  database: "db_landing_page",
+  database: "landing_page1",
 });
 
 conexion.connect(function (error) {
@@ -29,7 +29,7 @@ app.listen(puerto, function () {
 });
 
 
-app.post("/api/MATRICULA", (req, res) => {
+app.post("/api/MATRICULA1", (req, res) => {
 	let data = {
     	NOMMAT: req.body.NOMMAT,
     	EMAMAT: req.body.EMAMAT,
@@ -37,7 +37,7 @@ app.post("/api/MATRICULA", (req, res) => {
     	ASUMAT: req.body.ASUMAT,
     	DESCMAT: req.body.DESCMAT,
 	};
-	let sql = "INSERT INTO MATRICULA SET ?";
+	let sql = "INSERT INTO MATRICULA1 SET ?";
 	conexion.query(sql, data, function (error, results) {
   	if (error) {
     	throw error;
